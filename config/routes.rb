@@ -1,4 +1,6 @@
 PascalAppli::Application.routes.draw do
+  get "pages/menu"
+
   resources :utilisateurs
 
   # The priority is based upon order of creation:
