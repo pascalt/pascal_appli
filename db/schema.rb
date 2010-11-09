@@ -10,7 +10,24 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101107203605) do
+ActiveRecord::Schema.define(:version => 20101109171836) do
+
+  create_table "departements", :force => true do |t|
+    t.string   "nom"
+    t.string   "code"
+    t.string   "nc"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "region_id"
+  end
+
+  create_table "regions", :force => true do |t|
+    t.string   "nom"
+    t.string   "code"
+    t.string   "nc"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "utilisateurs", :force => true do |t|
     t.string   "nom"

@@ -18,6 +18,11 @@
     <td><%= link_to 'Destroy', utilisateur, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
+<% Region.all.each do |reg| %>
+  <tr>
+    <td><%= reg.nom %></td>
+  </tr>
+<% end %>
 </table>
 
 <br />
